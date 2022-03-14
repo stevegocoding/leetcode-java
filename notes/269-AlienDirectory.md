@@ -4,7 +4,10 @@
 * For BFS, have to maintain a indegree for each unique character in the charset.
 * For DFS, use temporary and permanent markers for each unique charater to detect circles.
 
-### Code - BFS 
+### Solution - BFS
+* Complexity:
+  * TC: 
+  * SC:
 ```java
 class Solution {
     public String alienOrder(String[] words) {
@@ -12,7 +15,7 @@ class Solution {
         final Map<Character, Integer> indegree = new HashMap<>();
         
         // Initialize adjacency list and indgree map.
-          for (final String word : words) {
+        for (final String word : words) {
             for (final char ch : word.toCharArray()) {
                 adjList.put(ch, new ArrayList<>());
                 indegree.put(ch, 0);
@@ -70,7 +73,10 @@ class Solution {
 }
 ```
 
-### Code - DFS
+### Solution - DFS
+* Complexity
+  * TC:
+  * SC:
 ```java
 class Solution {
     public String alienOrder(String[] words) {
